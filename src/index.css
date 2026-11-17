@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/* Design tokens (Tailwind v4, CSS-first config).
+   These are the tokens formerly defined in tailwind.config.js and in the
+   inline CDN config in index.html / popup.html. The CDN script is gone:
+   extension pages (Manifest V3 CSP) block remote and inline scripts, so
+   the styles must be bundled to work offline and inside the extension. */
+
+@theme {
+  --color-indigo: #4f46e5;
+  --color-violet: #7c3aed;
+  --color-background: #f8f9ff;
+  --color-surface: #ffffff;
+  --color-primary-text: #0b1c30;
+  --color-secondary-text: #464555;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+
+  /* Radii from tailwind.config.js. --radius-sm also backs the bare
+     `rounded` utility, so it carries the config's DEFAULT radius (0.5rem);
+     `rounded-sm` itself is unused in the app. */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+}
